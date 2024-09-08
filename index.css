@@ -1,1 +1,21 @@
 
+.wrapper{
+    background-image: url("bg.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+#Start{
+    height: 100px;
+    width: 200px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#Welcome{
+    font-size: 90px;
+    background-color: black;
+    color: White;
+    
+    /* color: white; */
+}
