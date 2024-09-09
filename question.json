@@ -2,12 +2,15 @@
   {
     "question": "What is the capital of France?",
     "options": ["Berlin", "Madrid", "Paris", "Rome"],
-    "answer": "Paris"
+    "answer": "Paris",
+    "id":1
   },
   {
     "question": "Which planet is known as the Red Planet?",
     "options": ["Earth", "Mars", "Jupiter", "Saturn"],
-    "answer": "Mars"
+    "answer": "Mars",
+    "id":2
+
   },
   {
     "question": "What is the largest ocean on Earth?",
@@ -17,7 +20,8 @@
       "Arctic Ocean",
       "Pacific Ocean"
     ],
-    "answer": "Pacific Ocean"
+    "answer": "Pacific Ocean",
+    "id":3
   },
   {
     "question": "Who wrote 'To Kill a Mockingbird'?",
@@ -27,37 +31,51 @@
       "Ernest Hemingway",
       "F. Scott Fitzgerald"
     ],
-    "answer": "Harper Lee"
+    "answer": "Harper Lee",
+    "id":4
+
   },
   {
     "question": "What is the hardest natural substance on Earth?",
     "options": ["Gold", "Iron", "Diamond", "Platinum"],
-    "answer": "Diamond"
+    "answer": "Diamond",
+    "id":5
   },
   {
     "question": "In which year did the Titanic sink?",
     "options": ["1912", "1905", "1915", "1920"],
-    "answer": "1912"
+    "answer": "1912",
+    "id":6
+
   },
   {
     "question": "What is the chemical symbol for gold?",
     "options": ["Au", "Ag", "Pb", "Fe"],
-    "answer": "Au"
+    "answer": "Au",
+    "id":7
+
   },
   {
     "question": "Which element has the atomic number 1?",
     "options": ["Helium", "Hydrogen", "Lithium", "Beryllium"],
-    "answer": "Hydrogen"
+    "answer": "Hydrogen",
+    "id":8
+
+
   },
 
   {
     "question": "What is the smallest prime number?",
     "options": ["1", "2", "3", "5"],
-    "answer": "2"
+    "answer": "2",
+    "id":9
+
   },
   {
     "question": "What is the main ingredient in guacamole?",
     "options": ["Tomato", "Onion", "Avocado", "Pepper"],
-    "answer": "Avocado"
+    "answer": "Avocado",
+    "id":10
+
   }
 ]

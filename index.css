@@ -3,6 +3,7 @@
     background-image: url("bg.jpg");
     background-size: cover;
     height: 100vh;
+    width: 100%;
 }
 
 #Start{
@@ -16,6 +17,110 @@
     font-size: 90px;
     background-color: black;
     color: White;
+}
+
+.option {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.option:hover {
+    background-color: #f1f1f1;
+}
+.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+#result {
+    font-size: 20px;
+    margin-top: 20px;
+}
+.container1 {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
     
-    /* color: white; */
+}
+#header {
+    font-size: 60px;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+#progress {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#question {
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    color:White;
+}
+#options{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    gap: 30px;
+    /* justify-content: space-between; */
+}
+
+.option {
+    display: block;
+    /* justify-content: center; */
+    margin: 10px auto;
+    padding: 20px;
+    width: 45%;
+    height: 100px;
+    background-color: #333;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+    align-content: center;
+
+}
+.option:hover {
+    background-color: #444;
+}
+.correct {
+    background-color: #4CAF50;
+}
+.incorrect {
+    background-color: #f44336;
+}
+#lifelines {
+    margin-top: 30px;
+    text-align: center;
+}
+.lifeline {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #444;
+    border-radius: 5px;
+    color: #FFD700;
+    cursor: pointer;
+    font-size: 18px;
+}
+.lifeline:hover {
+    background-color: #555;
+}
+
+#result{
+    font-size: 50px;
+    color: white;
+    text-align: center;
 }
