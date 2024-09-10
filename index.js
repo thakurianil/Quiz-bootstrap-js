@@ -4,11 +4,6 @@ let prizeMoney = 0;
 let health = 3;
 let time = document.querySelector(".timer");
 
-function timer(x){
-
-    time.innerText = x;
-
-}
 
 async function loadQuiz() {
   try {
@@ -86,7 +81,7 @@ function selectOption(e) {
 }
 
 function displayQuestions(index) {
-    timer(30);
+    
   const loadDeleteSOund = document.getElementById("Question");
   loadDeleteSOund.play();
   let healthLifestr = "";
@@ -168,10 +163,6 @@ function Half(index) {
       halfstr += `<div class="option" value="${option}" onclick="selectOption(this, '${option}')" "></div>`;
     }
   });
-  const toastLiveExample = document.getElementById("liveToast");
-
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-  toastBootstrap.show();
 
   options.innerHTML = halfstr;
 
@@ -189,10 +180,7 @@ function SureAnswer() {
       halfstr += `<div class="option" value="${option}" onclick="selectOption(this, '${option}')" "></div>`;
     }
   });
-  const toastLiveExample = document.getElementById("liveToast");
 
-  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
-  toastBootstrap.show();
 
 
   options.innerHTML = halfstr;
@@ -200,4 +188,3 @@ function SureAnswer() {
     .querySelector("#SureAnswer")
     .setAttribute("style", "visibility : hidden");
 }
-timer(30);
