@@ -1,19 +1,20 @@
-
-.wrapper{
+.wrapper {
     background-image: url("bg.jpg");
     background-size: cover;
     height: 100vh;
     width: 100%;
 }
 
-#Start{
+#Start {
     height: 100px;
     width: 200px;
-    font-size: 50px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-weight: bold;
+    text-shadow: 2px 2px Black;
 }
 
-#Welcome{
+#Welcome {
     font-size: 90px;
     background-color: black;
     color: White;
@@ -28,99 +29,179 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
 .option:hover {
     background-color: #f1f1f1;
 }
+
 .correct {
     background-color: #d4edda;
     border-color: #c3e6cb;
 }
+
 .incorrect {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
+
 #result {
     font-size: 20px;
-    margin-top: 20px;
+
+    color: wheat;
+    
 }
+
 .container1 {
     width: 80%;
     margin: 0 auto;
     padding-top: 20px;
-    
+
 }
+
 #header {
     font-size: 60px;
-    color: white;
-    margin-bottom: 20px;
+    color:  #2e419e;;
+    margin-bottom: 10px;
     text-align: center;
+    text-shadow: 2px 2px black;
+    background-image: url(./heading-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
 }
+
 #progress {
     font-size: 30px;
-    color: white;
+    color:firebrick;
     text-align: center;
-    margin-bottom: 20px;
+    text-shadow: 2px 2px black;
+    /* margin-bottom: 20px; */
+    /* height: 200px; */
+    /* background-color: #4876ff; */
+    /* background-image: url(./prize-banner.png); */
+
+    /* background-image: url(./pngtree-red-gradient-lower-third-label-banner-design-png-image_12839215.png); */
+    background-size: 350px;
+    background: -webkit-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    justify-content: center;
+    border-radius: 40px;
+    text-align: center;
+    align-content: center;
 }
+
 #question {
     font-size: 60px;
     text-align: center;
     margin-bottom: 30px;
-    color:White;
-}
-#options{
-    display: flex;
-    flex-wrap: wrap;
-    /* flex-direction: row; */
-    gap: 30px;
-    /* justify-content: space-between; */
+    color: White;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    height: 150px;
+    width: 100%;
+    background-image: url(./question-banner.svg);
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: fit;    
+    border: 3px solid gold;
+    
+
 }
 
-.option {
-    display: block;
-    /* justify-content: center; */
+#options {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-gap: 10px; 
+}
+
+.option{
+    /* display: block; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 10px auto;
     padding: 20px;
-    width: 45%;
+    width: 30%;
     height: 100px;
-    background-color: #333;
-    border: 2px solid #FFD700;
+    background-color: #2e419e;
+    border: 5px solid transparent;
+    border-image: linear-gradient(90deg, hsla(138, 100%, 33%, 1) 0%, hsla(58, 90%, 64%, 1) 75%);/* Define the gradient */
+  border-image-slice: 1;
     border-radius: 10px;
     cursor: pointer;
     font-size: 40px;
     color: #fff;
-    text-align: center;
-    align-content: center;
+    
+    /* text-align: center; */
+    /* align-content: center; */
+}
 
-}
 .option:hover {
-    background-color: #444;
+    background-color: #FDDA0D;
 }
-.correct {
-    background-color: #4CAF50;
-}
-.incorrect {
-    background-color: #f44336;
-}
+
+
 #lifelines {
-    margin-top: 30px;
+    margin-top: 10px;
     text-align: center;
 }
+
 .lifeline {
     display: inline-block;
-    margin: 10px;
-    padding: 15px 30px;
-    background-color: #444;
-    border-radius: 5px;
-    color: #FFD700;
+    /* margin: 10px; */
+    padding: 15px;
+    
+    border-radius: 30px;
     cursor: pointer;
     font-size: 18px;
 }
+
 .lifeline:hover {
-    background-color: #555;
+    transform: scale(0.7);
+
 }
 
-#result{
+#result {
     font-size: 50px;
     color: white;
     text-align: center;
+}
+
+.Healthlife {
+    font-size: 40px;
+    color: red;
+    gap: 15px;
+    background: -webkit-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
+    border-radius: 30px;
+    text-shadow: 2px 2px black;
+
+}
+
+i {
+    padding: 10px;
+}
+
+.border1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: end;
+    border: 14px;
+    /* background-color: #0c0f0c; */
+    /* box-shadow: 10px 10px lightblue; */
+    opacity: 90%;
+    border-radius: 30px;
+}
+
+.timer{
+    font-size: 30px;
+    color: white;
+}
+.logo{
+    font-size: 200px;
+    color: white;
 }
