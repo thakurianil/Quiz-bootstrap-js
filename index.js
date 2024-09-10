@@ -135,6 +135,11 @@ function updateProgress() {
 function useLifeline() {
   const loadDeleteSOund = document.getElementById("ringtone");
   loadDeleteSOund.play();
+  const toastLiveExample = document.getElementById("liveToast");
+
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastBootstrap.show();
+
   document.querySelector("#call").setAttribute("style", "visibility : hidden");
 }
 function randomrumber() {
@@ -163,6 +168,10 @@ function Half(index) {
       halfstr += `<div class="option" value="${option}" onclick="selectOption(this, '${option}')" "></div>`;
     }
   });
+  const toastLiveExample = document.getElementById("liveToast");
+
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastBootstrap.show();
 
   options.innerHTML = halfstr;
 
@@ -180,6 +189,11 @@ function SureAnswer() {
       halfstr += `<div class="option" value="${option}" onclick="selectOption(this, '${option}')" "></div>`;
     }
   });
+  const toastLiveExample = document.getElementById("liveToast");
+
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample);
+  toastBootstrap.show();
+
 
   options.innerHTML = halfstr;
   document
