@@ -197,10 +197,6 @@ i {
     border-radius: 30px;
 }
 
-.timer{
-    font-size: 30px;
-    color: white;
-}
 @keyframes fadeInScaleUp {
     0% {
       opacity: 0;
