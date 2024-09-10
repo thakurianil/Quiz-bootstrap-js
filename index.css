@@ -1,8 +1,8 @@
 .wrapper {
     background-image: url("bg.jpg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
-    width: 100%;
 }
 
 #Start {
@@ -201,7 +201,27 @@ i {
     font-size: 30px;
     color: white;
 }
-.logo{
-    font-size: 200px;
-    color: white;
-}
+@keyframes fadeInScaleUp {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(2);
+    }
+  }
+  
+  .logo {
+    font-size: 40px;
+    text-shadow: 2px 2px Black;
+    font-weight: bolder;
+    text-align: center;
+    color: red;
+    background-image: url(./heading-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: fadeInScaleUp 2s ease-out;
+    
+  }
+  

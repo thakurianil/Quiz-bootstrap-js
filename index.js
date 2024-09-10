@@ -2,17 +2,13 @@ let questions = [];
 let currentQuestionIndex = 0;
 let prizeMoney = 0;
 let health = 3;
-let timeElm = document.querySelector(".timer");
-let timer = function (x) {
-  if (x === 0) {
-    console.log("over");
-    return;
-  }
-  timeElm.innerHTML = x;
-  return setTimeout(() => {
-    timer(--x);
-  }, 1000);
-};
+let time = document.querySelector(".timer");
+
+function timer(x){
+
+    time.innerText = x;
+
+}
 
 async function loadQuiz() {
   try {
@@ -90,7 +86,7 @@ function selectOption(e) {
 }
 
 function displayQuestions(index) {
-  timer(30);
+    timer(30);
   const loadDeleteSOund = document.getElementById("Question");
   loadDeleteSOund.play();
   let healthLifestr = "";
@@ -100,7 +96,12 @@ function displayQuestions(index) {
     let container = document.querySelector(".container1");
 
     container.setAttribute("style", "visibility : hidden");
-    document.getElementById("result").innerText = "Game Over!";
+    let logo = document.querySelector(".logo");
+    const loadDeleteSOund = document.getElementById("Welcome");
+    loadDeleteSOund.play();
+    logo.setAttribute("style", "visibility : visibile");
+    logo.innerText = ` Winner!    
+    Prize: $${prizeMoney}`;
     document.getElementById("progress").innerText = `Prize: $${prizeMoney}`;
 
     return;
@@ -132,9 +133,9 @@ function updateProgress() {
 }
 
 function useLifeline() {
-    const loadDeleteSOund = document.getElementById("ringtone");
+  const loadDeleteSOund = document.getElementById("ringtone");
   loadDeleteSOund.play();
-
+  document.querySelector("#call").setAttribute("style", "visibility : hidden");
 }
 function randomrumber() {
   let randomrumber = Math.floor(Math.random() * 4);
@@ -185,3 +186,4 @@ function SureAnswer() {
     .querySelector("#SureAnswer")
     .setAttribute("style", "visibility : hidden");
 }
+timer(30);
