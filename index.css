@@ -15,7 +15,7 @@
 }
 
 #Welcome {
-    font-size: 90px;
+    font-size: 60px;
     background-color: black;
     color: White;
 }
@@ -59,7 +59,7 @@
 }
 
 #header {
-    font-size: 60px;
+    font-size: 40px;
     color:  #2e419e;;
     margin-bottom: 10px;
     text-align: center;
@@ -92,14 +92,14 @@
 }
 
 #question {
-    font-size: 60px;
+    font-size: 40px;
     text-align: center;
     margin-bottom: 30px;
     color: White;
     text-align: center;
     justify-content: center;
     align-content: center;
-    height: 150px;
+    height: 100px;
     width: 100%;
     background-image: url(./question-banner.svg);
     border-radius: 100px;
@@ -125,14 +125,14 @@
     margin: 10px auto;
     padding: 20px;
     width: 30%;
-    height: 100px;
+    height: 60px;
     background-color: #2e419e;
     border: 5px solid transparent;
     border-image: linear-gradient(90deg, hsla(138, 100%, 33%, 1) 0%, hsla(58, 90%, 64%, 1) 75%);/* Define the gradient */
   border-image-slice: 1;
     border-radius: 10px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     
     /* text-align: center; */
@@ -152,7 +152,7 @@
 .lifeline {
     display: inline-block;
     /* margin: 10px; */
-    padding: 15px;
+    padding: 10px;
     
     border-radius: 30px;
     cursor: pointer;
@@ -171,7 +171,7 @@
 }
 
 .Healthlife {
-    font-size: 40px;
+    font-size: 30px;
     color: red;
     gap: 15px;
     background: -webkit-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
@@ -209,7 +209,7 @@ i {
   }
   
   .logo {
-    font-size: 40px;
+    font-size: 30px;
     text-shadow: 2px 2px Black;
     font-weight: bolder;
     text-align: center;
