@@ -5,6 +5,12 @@
     height: 100vh;
 }
 
+img,
+svg {
+    vertical-align: middle;
+    height: 60px;
+}
+
 #Start {
     height: 100px;
     width: 200px;
@@ -48,30 +54,31 @@
     font-size: 20px;
 
     color: wheat;
-    
+
 }
 
 .container1 {
     width: 80%;
     margin: 0 auto;
-    padding-top: 20px;
-
 }
 
 #header {
-    font-size: 40px;
-    color:  #2e419e;;
+    font-size: 35px;
+    color: #2e419e;
+    ;
     margin-bottom: 10px;
     text-align: center;
     text-shadow: 2px 2px black;
     background-image: url(./heading-removebg-preview.png);
     background-size: cover;
     background-position: center;
+    height: 105px;
+    align-content: center;
 }
 
 #progress {
     font-size: 30px;
-    color:firebrick;
+    color: firebrick;
     text-align: center;
     text-shadow: 2px 2px black;
     /* margin-bottom: 20px; */
@@ -84,7 +91,7 @@
     background: -webkit-linear-gradient(90deg, hsla(105, 89%, 29%, 1) 0%, hsla(57, 90%, 51%, 1) 50%, hsla(6, 95%, 50%, 1) 100%);
     background-position: center;
     background-repeat: no-repeat;
-    width: 300px;
+    width: 40%;
     justify-content: center;
     border-radius: 40px;
     text-align: center;
@@ -99,42 +106,44 @@
     text-align: center;
     justify-content: center;
     align-content: center;
-    height: 100px;
+    height: 75px;
     width: 100%;
     background-image: url(./question-banner.svg);
     border-radius: 100px;
     background-size: cover;
     background-position: center;
-    background-image: fit;    
+    background-image: fit;
     border: 3px solid gold;
-    
+
 
 }
 
 #options {
     display: grid;
-  grid-template-columns: repeat(2, 1fr); /* 2 columns */
-  grid-gap: 10px; 
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    grid-gap: 10px;
 }
 
-.option{
+.option {
     /* display: block; */
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 10px auto;
     padding: 20px;
-    width: 30%;
+    width: 45%;
     height: 60px;
     background-color: #2e419e;
     border: 5px solid transparent;
-    border-image: linear-gradient(90deg, hsla(138, 100%, 33%, 1) 0%, hsla(58, 90%, 64%, 1) 75%);/* Define the gradient */
-  border-image-slice: 1;
+    border-image: linear-gradient(90deg, hsla(138, 100%, 33%, 1) 0%, hsla(58, 90%, 64%, 1) 75%);
+    /* Define the gradient */
+    border-image-slice: 1;
     border-radius: 10px;
     cursor: pointer;
     font-size: 30px;
     color: #fff;
-    
+
     /* text-align: center; */
     /* align-content: center; */
 }
@@ -153,7 +162,7 @@
     display: inline-block;
     /* margin: 10px; */
     padding: 10px;
-    
+
     border-radius: 30px;
     cursor: pointer;
     font-size: 18px;
@@ -199,16 +208,17 @@ i {
 
 @keyframes fadeInScaleUp {
     0% {
-      opacity: 0;
-      transform: scale(0.5);
+        opacity: 0;
+        transform: scale(0.5);
     }
+
     100% {
-      opacity: 1;
-      transform: scale(2);
+        opacity: 1;
+        transform: scale(2);
     }
-  }
-  
-  .logo {
+}
+
+.logo {
     font-size: 30px;
     text-shadow: 2px 2px Black;
     font-weight: bolder;
@@ -218,6 +228,76 @@ i {
     background-position: center;
     background-repeat: no-repeat;
     animation: fadeInScaleUp 2s ease-out;
-    
-  }
-  
+
+}
+
+@media (width< 730px) {
+    .wrapper {
+        height: auto;
+        background-size: contain;
+    }
+
+    #Start {
+        height: 80px;
+        width: 150px;
+        font-size: 30px;
+    }
+
+    #Welcome {
+        font-size: 40px;
+    }
+
+    .option {
+        font-size: 20px;
+        padding: 10px;
+        width: 80%;
+    }
+
+    #header {
+        font-size: 27px;
+        height: 60px;
+    }
+
+    #progress {
+        font-size: 24px;
+
+    }
+
+    #question {
+        font-size: 24px;
+        height: 60px;
+    }
+
+    #result {
+        font-size: 30px;
+    }
+
+    .container1 {
+        width: 100%;
+    }
+
+    .Healthlife {
+        font-size: 20px;
+    }
+
+    #lifelines .lifeline {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+
+    .option {
+        height: 50px;
+        font-size: 20px;
+    }
+
+    img,
+    svg {
+        vertical-align: middle;
+        height: 40px;
+    }
+}
